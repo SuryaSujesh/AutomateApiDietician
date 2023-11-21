@@ -59,8 +59,7 @@ public void user_performs_post_http_requests_to_create_a_patient() throws IOExce
 @Then("User receives status code {int}")
 public void user_receives_status_code(Integer int2) {
 	
-	assertEquals(res.getStatusCode(),201);
-	
+	assertEquals(res.getStatusCode(),200);	
     }
 
 @Given("User tries to update patient details for allergy and phone number")

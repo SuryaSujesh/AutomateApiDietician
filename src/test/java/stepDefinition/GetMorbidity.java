@@ -4,14 +4,12 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
-
-import org.junit.Assert;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+
 import resources.Utils;
 
 public class GetMorbidity extends Utils {
@@ -42,9 +40,7 @@ public void user_get_morbidity_details_with_200ok() {
 	
 	assertEquals(res1.getStatusCode(),200);	
 	morbidityName= res1.jsonPath().getString("morbidityTestName");
-	
-     }
-
+    }
 @When("User performs GET http requests with morbidityname")
 public void user_performs_get_http_requests_with_morbidityname() {
 	     resp= req1.when()

@@ -16,8 +16,8 @@ import resources.Utils;
 
 public class UpdatePatientNegative extends Utils{
 
-	RequestSpecification reqs;
-	Response res;
+	RequestSpecification reqs,req1;
+	Response res,res2;
 	String message;
 	
 	@Given("User tries to update patient with same phone number and DateOfBirth")
@@ -37,8 +37,7 @@ public class UpdatePatientNegative extends Utils{
 						+ "\"DateOfBirth\": \"1971-06-08\"\n"
 						+ "\n"
 						+ "}")
-				.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"))
-				.log().all();			 
+				.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"));						 
 	          }
 	
 
@@ -56,8 +55,43 @@ public class UpdatePatientNegative extends Utils{
 		message = res.jsonPath().getString("errorMessage");
 		assertEquals("Patient already exists with given DateOfBirth and ContactNumber", message);
 		assertEquals(res.getStatusCode(),400);
-		
-		
+				
 	}
+
+	@Given("User tries to update patient without token")
+	public void user_tries_to_update_patient_without_token() throws IOException {
+		req1 = given().spec(requestSpec())
+				.header("Content-Type","multipart/form-data")
+				.pathParam("patientId",CreateandUpdatePatient.id)
+				.formParam("patientInfo", "{\n"
+						+ "\n"
+						+ "\"FirstName\": \"Jin\",\n"
+						+ "\"LastName\": \"Nigam\",\n"
+						+ "\"ContactNumber\": \"9138512368\",\n"
+						+ "\"Email\": \"gam@gmail.com\",\n"
+						+ "\"Allergy\": \"Peanuts\",\n"
+						+ "\"FoodCategory\": \"Vegan\",\n"
+						+ "\"DateOfBirth\": \"1989-06-08\"\n"
+						+ "\n"
+						+ "}")
+				.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"))
+				;
+
+	}
+
+	@When("User tries to update patient without access token")
+	public void user_tries_to_update_patient_without_access_token() throws IOException {
+		res2 = req1.when()			
+			       .put(getValue("UpdatePatient")).then()
+			       .statusCode(401)		   
+			       .extract().response();
+	}
+
+
+@Then("User should receive unauthorized meassage with {int}")
+public void user_should_receive_unauthorized_meassage_with(Integer int1) {
+	assertEquals(res2.getStatusCode(),401);
+}
+
 	
 } 
