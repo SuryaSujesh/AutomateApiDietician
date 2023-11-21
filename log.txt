@@ -1,0 +1,945 @@
+Request method:	POST
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Abcd",
+    "userLoginEmail": "invalid@gmail.com"
+}
+HTTP/1.1 401 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531312&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ImuCMrgFVWlxRzxj1LznZB2GNLFOTanOeHYRvBmCbfw%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531312&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ImuCMrgFVWlxRzxj1LznZB2GNLFOTanOeHYRvBmCbfw%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:32 GMT
+Via: 1.1 vegur
+
+{
+    "timestamp": "2023-11-21T01:48:32.183+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/dietician/login"
+}
+Request method:	POST
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Teach00",
+    "userLoginEmail": "ksurya2008@gmail.com"
+}
+HTTP/1.1 200 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531312&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ImuCMrgFVWlxRzxj1LznZB2GNLFOTanOeHYRvBmCbfw%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531312&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=ImuCMrgFVWlxRzxj1LznZB2GNLFOTanOeHYRvBmCbfw%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:32 GMT
+Via: 1.1 vegur
+
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q",
+    "type": "Bearer ",
+    "userId": 142,
+    "loginUserEmail": "ksurya2008@gmail.com",
+    "roles": [
+        "ROLE_DIETICIAN"
+    ]
+}
+Request method:	POST
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/patient
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 500 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531314&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VGGBKZ0ueVdOCY4VrbpFsNxJiZWyprxsL5KTN46lEJw%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531314&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VGGBKZ0ueVdOCY4VrbpFsNxJiZWyprxsL5KTN46lEJw%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:34 GMT
+Via: 1.1 vegur
+
+{
+    "timestamp": "2023-11-21T01:48:34.187+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/dietician/patient"
+}
+Request method:	POST
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/patient
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	patientInfo={
+
+"FirstName": "Fred",
+"LastName": "Lip",
+"ContactNumber": "9978654321",
+"Email": "fredlip@gmail.com",
+"Allergy": "Cashew",
+"FoodCategory": "Vegan",
+"DateOfBirth": "1971-06-08"
+
+}
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = HyperThyroid_Report_final.pdf
+				Content-Type: application/octet-stream
+
+				src/test/java/resources/HyperThyroid_Report_final.pdf
+Body:			<none>
+HTTP/1.1 201 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531314&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VGGBKZ0ueVdOCY4VrbpFsNxJiZWyprxsL5KTN46lEJw%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531314&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=VGGBKZ0ueVdOCY4VrbpFsNxJiZWyprxsL5KTN46lEJw%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:35 GMT
+Via: 1.1 vegur
+
+{
+    "patientId": 5042,
+    "FirstName": "Fred",
+    "LastName": "Lip",
+    "ContactNumber": "9978654321",
+    "Email": "fredlip@gmail.com",
+    "Allergy": "Cashew",
+    "FoodCategory": "Vegan",
+    "FileMorbidity": {
+        "655c0c73fa57dd184cbea110": {
+            "T4": "15.7 µg/dL",
+            "TSH": "0.016 µIU/mL",
+            "T3": "6.3 ng/mL"
+        }
+    },
+    "FileMorbidityCondition": {
+        "655c0c73fa57dd184cbea110": "Thyroid: Hyperthyroidism \n"
+    },
+    "DateOfBirth": "1971-06-08T00:00:00.000+00:00",
+    "DieticianId": 142
+}
+Request method:	PUT
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/patient/5042
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	patientInfo={
+
+"FirstName": "Nick",
+"LastName": "Mary",
+"ContactNumber": "9138239658",
+"Email": "fredlip@gmail.com",
+"Allergy": "Peanuts",
+"FoodCategory": "Vegan",
+"DateOfBirth": "1970-04-08"
+
+}
+Path params:	patientId=5042
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = HyperThyroid_Report_final.pdf
+				Content-Type: application/octet-stream
+
+				src/test/java/resources/HyperThyroid_Report_final.pdf
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531315&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=%2Bt%2FyxEKSHTIbyeQ0hiUE2pmV1c%2B3FP%2F8E4hDUW5QQNc%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531315&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=%2Bt%2FyxEKSHTIbyeQ0hiUE2pmV1c%2B3FP%2F8E4hDUW5QQNc%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:36 GMT
+Via: 1.1 vegur
+
+{
+    "patientId": 5042,
+    "FirstName": "Nick",
+    "LastName": "Mary",
+    "ContactNumber": "9138239658",
+    "Email": "fredlip@gmail.com",
+    "Allergy": "Peanuts",
+    "FoodCategory": "Vegan",
+    "FileMorbidity": {
+        "655c0c73fa57dd184cbea110": {
+            "T4": "15.7 µg/dL",
+            "TSH": "0.016 µIU/mL",
+            "T3": "6.3 ng/mL"
+        },
+        "655c0c74fa57dd184cbea114": {
+            "T4": "15.7 µg/dL",
+            "TSH": "0.016 µIU/mL",
+            "T3": "6.3 ng/mL"
+        }
+    },
+    "FileMorbidityCondition": {
+        "655c0c73fa57dd184cbea110": "Thyroid: Hyperthyroidism \n",
+        "655c0c74fa57dd184cbea114": "Thyroid: Hyperthyroidism \n"
+    },
+    "DateOfBirth": "1970-04-08T00:00:00.000+00:00",
+    "DieticianId": 142
+}
+Request method:	PUT
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/patient/5042
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	patientInfo={
+
+"FirstName": "Uma",
+"LastName": "Nandigam",
+"ContactNumber": "9138549968",
+"Email": "umanandigam@gmail.com",
+"Allergy": "Peanuts",
+"FoodCategory": "Vegan",
+"DateOfBirth": "1971-06-08"
+
+}
+Path params:	patientId=5042
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = HyperThyroid_Report_final.pdf
+				Content-Type: application/octet-stream
+
+				src/test/java/resources/HyperThyroid_Report_final.pdf
+Body:			<none>
+HTTP/1.1 400 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531317&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=JOsmik1bATi6WM%2Fik6VNUKGNyoY5NkTD6uGyu7sYnVE%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531317&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=JOsmik1bATi6WM%2Fik6VNUKGNyoY5NkTD6uGyu7sYnVE%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:37 GMT
+Via: 1.1 vegur
+
+{
+    "errorCode": "DUPLICATE_ENTITY",
+    "errorMessage": "Patient already exists with given DateOfBirth and ContactNumber"
+}
+Request method:	GET
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/patient
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531318&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=i56323X9S7AkyakQDQdnt4LzdP1V57Tcxpwts%2BWLbws%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531318&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=i56323X9S7AkyakQDQdnt4LzdP1V57Tcxpwts%2BWLbws%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:37 GMT
+Via: 1.1 vegur
+
+[
+    {
+        "patientId": 4762,
+        "FirstName": "Uma",
+        "LastName": "Nandigam",
+        "ContactNumber": "9138549968",
+        "Email": "umanandigam@gmail.com",
+        "Allergy": "Peanuts",
+        "FoodCategory": "Vegan",
+        "FileMorbidity": {
+            "655be78efa57dd184cbe9e36": {
+                "T4": "15.7 µg/dL",
+                "TSH": "0.016 µIU/mL",
+                "T3": "6.3 ng/mL"
+            },
+            "655be790fa57dd184cbe9e42": {
+                "T4": "15.7 µg/dL",
+                "TSH": "0.016 µIU/mL",
+                "T3": "6.3 ng/mL"
+            },
+            "655be78ffa57dd184cbe9e3a": {
+                "T4": "15.7 µg/dL",
+                "TSH": "0.016 µIU/mL",
+                "T3": "6.3 ng/mL"
+            }
+        },
+        "FileMorbidityCondition": {
+            "655be78efa57dd184cbe9e36": "Thyroid: Hyperthyroidism \n",
+            "655be790fa57dd184cbe9e42": "Thyroid: Hyperthyroidism \n",
+            "655be78ffa57dd184cbe9e3a": "Thyroid: Hyperthyroidism \n"
+        },
+        "DateOfBirth": "1971-06-08T00:00:00.000+00:00",
+        "DieticianId": 142
+    },
+    {
+        "patientId": 4770,
+        "FirstName": "Fred",
+        "LastName": "Lip",
+        "ContactNumber": "9138549658",
+        "Email": "fredlip@gmail.com",
+        "Allergy": "Peanuts",
+        "FoodCategory": "Vegan",
+        "FileMorbidity": {
+            "655be9e6fa57dd184cbe9e60": {
+                "T4": "15.7 µg/dL",
+                "TSH": "0.016 µIU/mL",
+                "T3": "6.3 ng/mL"
+            },
+            "655be9e7fa57dd184cbe9e64": {
+                "T4": "15.7 µg/dL",
+                "TSH": "0.016 µIU/mL",
+                "T3": "6.3 ng/mL"
+            }
+        },
+        "FileMorbidityCondition": {
+            "655be9e6fa57dd184cbe9e60": "Thyroid: Hyperthyroidism \n",
+            "655be9e7fa57dd184cbe9e64": "Thyroid: Hyperthyroidism \n"
+        },
+        "DateOfBirth": "1970-04-08T00:00:00.000+00:00",
+        "DieticianId": 142
+    },
+    {
+        "patientId": 5042,
+        "FirstName": "Nick",
+        "LastName": "Mary",
+        "ContactNumber": "9138239658",
+        "Email": "fredlip@gmail.com",
+        "Allergy": "Peanuts",
+        "FoodCategory": "Vegan",
+        "FileMorbidity": {
+            "655c0c73fa57dd184cbea110": {
+                "T4": "15.7 µg/dL",
+                "TSH": "0.016 µIU/mL",
+                "T3": "6.3 ng/mL"
+            },
+            "655c0c74fa57dd184cbea114": {
+                "T4": "15.7 µg/dL",
+                "TSH": "0.016 µIU/mL",
+                "T3": "6.3 ng/mL"
+            }
+        },
+        "FileMorbidityCondition": {
+            "655c0c73fa57dd184cbea110": "Thyroid: Hyperthyroidism \n",
+            "655c0c74fa57dd184cbea114": "Thyroid: Hyperthyroidism \n"
+        },
+        "DateOfBirth": "1970-04-08T00:00:00.000+00:00",
+        "DieticianId": 142
+    }
+]
+Request method:	GET
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/morbidity
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531318&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=i56323X9S7AkyakQDQdnt4LzdP1V57Tcxpwts%2BWLbws%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531318&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=i56323X9S7AkyakQDQdnt4LzdP1V57Tcxpwts%2BWLbws%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:38 GMT
+Via: 1.1 vegur
+
+[
+    {
+        "morbidityId": 1,
+        "morbidityTestId": "DIA_FG",
+        "morbidityNameRegex": "(?i)(.*)fasting(.*)[sugarglucose](.*)|(.*)glucose(.*)fasting(.*)",
+        "morbidityTestName": "Fasting Glucose",
+        "morbidityTestUnit": "mg/dL",
+        "morbidityMarkerMinVal": 100.0,
+        "morbidityMarkerMaxVal": 125.0
+    },
+    {
+        "morbidityId": 2,
+        "morbidityTestId": "DIA_AG",
+        "morbidityNameRegex": "(?i)(.*)average(.*)glucose(.*)",
+        "morbidityTestName": "Average Glucose",
+        "morbidityTestUnit": "mg/dL",
+        "morbidityMarkerMinVal": 121.0,
+        "morbidityMarkerMaxVal": 150.0
+    },
+    {
+        "morbidityId": 3,
+        "morbidityTestId": "DIA_PG",
+        "morbidityNameRegex": "(?i)(.*)plasma(.*)glucose(.*)",
+        "morbidityTestName": "Plasma Glucose",
+        "morbidityTestUnit": "mg/dL",
+        "morbidityMarkerMinVal": 140.0,
+        "morbidityMarkerMaxVal": 199.0
+    },
+    {
+        "morbidityId": 4,
+        "morbidityTestId": "DIA_HBA1C",
+        "morbidityNameRegex": "(.*)HbA[1I]c(.*)|(.*)H(.*)P(.*)L(.*)C(.*)",
+        "morbidityTestName": "HbA1c",
+        "morbidityTestUnit": "%",
+        "morbidityMarkerMinVal": 5.7,
+        "morbidityMarkerMaxVal": 6.5
+    },
+    {
+        "morbidityId": 5,
+        "morbidityTestId": "THYRO_TSH",
+        "morbidityNameRegex": "(?i)(.*)T(.*)S(.*)H(.*)|(.*)THYROID STIMULATING HORMONE(.*)",
+        "morbidityTestName": "TSH",
+        "morbidityTestUnit": "μIU/ml",
+        "morbidityMarkerMinVal": 0.55,
+        "morbidityMarkerMaxVal": 4.78
+    },
+    {
+        "morbidityId": 6,
+        "morbidityTestId": "THYRO_TSH_1",
+        "morbidityNameRegex": "(?i)(.*)T(.*)S(.*)H(.*)|(.*)THYROID STIMULATING HORMONE(.*)",
+        "morbidityTestName": "TSH",
+        "morbidityTestUnit": "uIU/ml",
+        "morbidityMarkerMinVal": 0.55,
+        "morbidityMarkerMaxVal": 4.78
+    },
+    {
+        "morbidityId": 7,
+        "morbidityTestId": "THYRO_T3",
+        "morbidityNameRegex": "(?i)(.*)T3(.*)",
+        "morbidityTestName": "T3",
+        "morbidityTestUnit": "ng/dL",
+        "morbidityMarkerMinVal": 60.0,
+        "morbidityMarkerMaxVal": 180.0
+    },
+    {
+        "morbidityId": 8,
+        "morbidityTestId": "THYRO_T3_1",
+        "morbidityNameRegex": "(?i)(.*)T3(.*)",
+        "morbidityTestName": "T3",
+        "morbidityTestUnit": "ng/mL",
+        "morbidityMarkerMinVal": 0.6,
+        "morbidityMarkerMaxVal": 1.8
+    },
+    {
+        "morbidityId": 9,
+        "morbidityTestId": "THYRO_T3_2",
+        "morbidityNameRegex": "(?i)(.*)T3(.*)",
+        "morbidityTestName": "T3",
+        "morbidityTestUnit": "pg/mL",
+        "morbidityMarkerMinVal": 1.5,
+        "morbidityMarkerMaxVal": 4.1
+    },
+    {
+        "morbidityId": 10,
+        "morbidityTestId": "THYRO_T3_3",
+        "morbidityNameRegex": "(?i)(.*)T3(.*)",
+        "morbidityTestName": "T3",
+        "morbidityTestUnit": "nmol/L",
+        "morbidityMarkerMinVal": 0.9,
+        "morbidityMarkerMaxVal": 2.76
+    },
+    {
+        "morbidityId": 11,
+        "morbidityTestId": "THYRO_T4",
+        "morbidityNameRegex": "(?i)(.*)T4(.*)",
+        "morbidityTestName": "T4",
+        "morbidityTestUnit": "μg/dL",
+        "morbidityMarkerMinVal": 5.0,
+        "morbidityMarkerMaxVal": 12.0
+    },
+    {
+        "morbidityId": 12,
+        "morbidityTestId": "THYRO_T4_1",
+        "morbidityNameRegex": "(?i)(.*)T4(.*)",
+        "morbidityTestName": "T4",
+        "morbidityTestUnit": "ug/dL",
+        "morbidityMarkerMinVal": 5.0,
+        "morbidityMarkerMaxVal": 12.0
+    },
+    {
+        "morbidityId": 13,
+        "morbidityTestId": "THYRO_T4_2",
+        "morbidityNameRegex": "(?i)(.*)T4(.*)",
+        "morbidityTestName": "T4",
+        "morbidityTestUnit": "ng/dL",
+        "morbidityMarkerMinVal": 0.8,
+        "morbidityMarkerMaxVal": 1.9
+    },
+    {
+        "morbidityId": 14,
+        "morbidityTestId": "BP_LEVEL",
+        "morbidityNameRegex": "(?i)(.*)Blood(.*)Pressure(.*)",
+        "morbidityTestName": "Blood Pressure Levels",
+        "morbidityTestUnit": "mm Hg",
+        "morbidityMarkerMinVal": 80.0,
+        "morbidityMarkerMaxVal": 130.0
+    },
+    {
+        "morbidityId": 15,
+        "morbidityTestId": "THYRO_TSH_2",
+        "morbidityNameRegex": "(?i)(.*)T(.*)S(.*)H(.*)|(.*)THYROID STIMULATING HORMONE(.*)",
+        "morbidityTestName": "TSH",
+        "morbidityTestUnit": "mIU/L",
+        "morbidityMarkerMinVal": 0.45,
+        "morbidityMarkerMaxVal": 4.12
+    }
+]
+Request method:	GET
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/morbidity/TSH
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531319&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yziJRd7tjC3gW4cVzHkFaUePLZvoNtl2s6qdDgpDKxg%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531319&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yziJRd7tjC3gW4cVzHkFaUePLZvoNtl2s6qdDgpDKxg%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:38 GMT
+Via: 1.1 vegur
+
+[
+    {
+        "morbidityId": 5,
+        "morbidityTestId": "THYRO_TSH",
+        "morbidityNameRegex": "(?i)(.*)T(.*)S(.*)H(.*)|(.*)THYROID STIMULATING HORMONE(.*)",
+        "morbidityTestName": "TSH",
+        "morbidityTestUnit": "μIU/ml",
+        "morbidityMarkerMinVal": 0.55,
+        "morbidityMarkerMaxVal": 4.78
+    },
+    {
+        "morbidityId": 6,
+        "morbidityTestId": "THYRO_TSH_1",
+        "morbidityNameRegex": "(?i)(.*)T(.*)S(.*)H(.*)|(.*)THYROID STIMULATING HORMONE(.*)",
+        "morbidityTestName": "TSH",
+        "morbidityTestUnit": "uIU/ml",
+        "morbidityMarkerMinVal": 0.55,
+        "morbidityMarkerMaxVal": 4.78
+    },
+    {
+        "morbidityId": 15,
+        "morbidityTestId": "THYRO_TSH_2",
+        "morbidityNameRegex": "(?i)(.*)T(.*)S(.*)H(.*)|(.*)THYROID STIMULATING HORMONE(.*)",
+        "morbidityTestName": "TSH",
+        "morbidityTestUnit": "mIU/L",
+        "morbidityMarkerMinVal": 0.45,
+        "morbidityMarkerMaxVal": 4.12
+    }
+]
+Request method:	GET
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/morbidity
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 401 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531319&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yziJRd7tjC3gW4cVzHkFaUePLZvoNtl2s6qdDgpDKxg%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531319&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yziJRd7tjC3gW4cVzHkFaUePLZvoNtl2s6qdDgpDKxg%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:38 GMT
+Via: 1.1 vegur
+
+{
+    "timestamp": "2023-11-21T01:48:39.468+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/dietician/morbidity"
+}
+Request method:	DELETE
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/patient/5042
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	patientId=5042
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531319&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yziJRd7tjC3gW4cVzHkFaUePLZvoNtl2s6qdDgpDKxg%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531319&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=yziJRd7tjC3gW4cVzHkFaUePLZvoNtl2s6qdDgpDKxg%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 42
+Date: Tue, 21 Nov 2023 01:48:39 GMT
+Via: 1.1 vegur
+
+Patient with Id 5042 deleted Successfully!
+Request method:	DELETE
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/patient/5042
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	patientId=5042
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531320&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XguRQeVWEghJalq%2F4SVs1lSfX5LJVsjwG4aTFLZw5Ho%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531320&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XguRQeVWEghJalq%2F4SVs1lSfX5LJVsjwG4aTFLZw5Ho%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:39 GMT
+Via: 1.1 vegur
+
+{
+    "errorCode": "NOT_FOUND",
+    "errorMessage": "Patient not found with patientId : 5042"
+}
+Request method:	POST
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "Abcd",
+    "userLoginEmail": "invalid@gmail.com"
+}
+HTTP/1.1 401 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531320&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XguRQeVWEghJalq%2F4SVs1lSfX5LJVsjwG4aTFLZw5Ho%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531320&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=XguRQeVWEghJalq%2F4SVs1lSfX5LJVsjwG4aTFLZw5Ho%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:40 GMT
+Via: 1.1 vegur
+
+{
+    "timestamp": "2023-11-21T01:48:40.980+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/dietician/login"
+}
+Request method:	POST
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "test",
+    "userLoginEmail": "fredlip@gmail.com"
+}
+HTTP/1.1 200 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531321&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=3KzQP4QwN6ZkwuG2%2BhyO0lrBVs7adwKAVwKdUDFz1ZI%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531321&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=3KzQP4QwN6ZkwuG2%2BhyO0lrBVs7adwKAVwKdUDFz1ZI%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 21 Nov 2023 01:48:40 GMT
+Via: 1.1 vegur
+
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmVkbGlwQGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMyMSwiZXhwIjoxNzAwNTYwMTIxfQ.Jfv0N3a20kO9rj8B7UVai-NtFHkIQyU3ErfmVOoQGVlncHQbHpfn3stQE3b_sf_OilOz5YOsBfIfznPNaOdcEQ",
+    "type": "Bearer ",
+    "userId": 4826,
+    "loginUserEmail": "fredlip@gmail.com",
+    "roles": [
+        "ROLE_PATIENT"
+    ]
+}
+Request method:	GET
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/logoutdietician
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmVkbGlwQGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMyMSwiZXhwIjoxNzAwNTYwMTIxfQ.Jfv0N3a20kO9rj8B7UVai-NtFHkIQyU3ErfmVOoQGVlncHQbHpfn3stQE3b_sf_OilOz5YOsBfIfznPNaOdcEQ
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531321&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=3KzQP4QwN6ZkwuG2%2BhyO0lrBVs7adwKAVwKdUDFz1ZI%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531321&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=3KzQP4QwN6ZkwuG2%2BhyO0lrBVs7adwKAVwKdUDFz1ZI%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 17
+Date: Tue, 21 Nov 2023 01:48:40 GMT
+Via: 1.1 vegur
+
+Logout successful
+Request method:	GET
+Request URI:	https://dietician-dev-41d9a344a720.herokuapp.com/dietician/logoutdietician
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrc3VyeWEyMDA4QGdtYWlsLmNvbSIsImlhdCI6MTcwMDUzMTMxMywiZXhwIjoxNzAwNTYwMTEzfQ.D9w68_sEIqblTzISTurq8zyqJ9jkIynblzm3aEa28ujgKoMoAdXUjOejANdOti6uvpldpH-JFm2yPUP0Hz_a1Q
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Server: Cowboy
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700531322&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=p2naGcmFQLpQ1iK1RomEUVzp3k3xJupoGS%2Bh2tqcX34%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700531322&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=p2naGcmFQLpQ1iK1RomEUVzp3k3xJupoGS%2Bh2tqcX34%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 17
+Date: Tue, 21 Nov 2023 01:48:42 GMT
+Via: 1.1 vegur
+
+Logout successful
