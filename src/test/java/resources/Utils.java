@@ -16,7 +16,7 @@ public class Utils {
 	
 	public static String getValue(String key) throws IOException {
 	Properties prop = new Properties();
-	FileInputStream fis = new FileInputStream("/Users/surya/eclipse-workspace/ApiAutomate_Dietician/src/test/java/resources/global.properties");
+	FileInputStream fis = new FileInputStream("src/test/java/resources/global.properties");
 	prop.load(fis);
     return prop.getProperty(key);
 	}
