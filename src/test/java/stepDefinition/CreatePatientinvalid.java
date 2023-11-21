@@ -6,6 +6,8 @@ import static org.junit.Assert.assertEquals;
 import java.io.File;
 import java.io.IOException;
 
+import org.junit.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -36,7 +38,7 @@ public void user_tries_post_requests_without_form_data() throws IOException {
 @Then("Will receive an error code {int}")
 public void will_receive_an_error_code(Integer int1) {
 	
-	      assertEquals(res.getStatusCode(),500);
+	    assertEquals(res.getStatusCode(),500);
          }
 
 }

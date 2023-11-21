@@ -9,6 +9,7 @@ import java.io.IOException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import resources.Utils;
@@ -45,7 +46,7 @@ public class UpdatePatientNegative extends Utils{
 	public void user_tries_to_update_an_existing_patient_with_put_requests() throws IOException {
 		res = reqs.when()			
 			       .put(getValue("UpdatePatient")).then()
-			       .statusCode(400).log().all()	      
+			       .statusCode(400)		   
 			       .extract().response();	 
 	}
 
@@ -55,6 +56,8 @@ public class UpdatePatientNegative extends Utils{
 		message = res.jsonPath().getString("errorMessage");
 		assertEquals("Patient already exists with given DateOfBirth and ContactNumber", message);
 		assertEquals(res.getStatusCode(),400);
+		
+		
 	}
 	
 } 

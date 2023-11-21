@@ -6,15 +6,11 @@ import static org.junit.Assert.assertEquals;
 import java.io.File;
 import java.io.IOException;
 
-import org.json.JSONObject;
+import org.junit.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.RestAssured;
-import io.restassured.config.EncoderConfig;
-import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import resources.Utils;
@@ -54,7 +50,7 @@ public void user_performs_post_http_requests_to_create_a_patient() throws IOExce
    
 	    res = req1.when()			
 		       .post(getValue("Patient")).then()
-		       .statusCode(201).log().all()	      
+		       .statusCode(201)	      
 		       .extract().response();
 	     id= res.jsonPath().getInt("patientId");
 	           

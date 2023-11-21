@@ -5,6 +5,8 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 
+import org.junit.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -52,7 +54,7 @@ public void user_performs_get_http_requests_with_morbidityname() {
 
 @Then("User get morbidity condition with 200OK")
 public void user_get_morbidity_condition_with_200ok() {
-	
+
 	assertEquals(resp.getStatusCode(),200);
      }
 

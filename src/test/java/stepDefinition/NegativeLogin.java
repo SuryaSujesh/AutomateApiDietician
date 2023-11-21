@@ -31,7 +31,7 @@ public class NegativeLogin extends Utils {
 	public void tries_to_login() throws IOException {
 		 response=reqspec.when()
 				.post(getValue("Login"))
-				.then().statusCode(401)
+				.then().statusCode(401)  
 				.extract().response();	}
 
 	@Then("Invalid login and status code {int} is created")
