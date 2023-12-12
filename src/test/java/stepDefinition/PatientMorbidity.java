@@ -1,4 +1,4 @@
-/*package stepDefinition;
+package stepDefinition;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -40,4 +40,4 @@ public void patient_receives_morbidity_details_with_200ok_status_code() {
 	assertEquals(res1.getStatusCode(),200);
 	
 }
-} */
+} 
