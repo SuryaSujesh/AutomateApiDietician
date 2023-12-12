@@ -6,13 +6,12 @@ import static org.junit.Assert.assertEquals;
 import java.io.File;
 import java.io.IOException;
 
-import org.junit.Assert;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import pojo.Pojo;
 import resources.Utils;
 import utilities.Testdata;
 
@@ -29,17 +28,7 @@ public void user_enters_patient_details() throws IOException {
 	req1=  given().spec(requestSpec())
 			.header("Authorization", "Bearer "+UserLogin.token)
 			.header("Content-Type","multipart/form-data")
-			.formParam("patientInfo", "{\n"
-					+ "\n"
-					+ "\"FirstName\": \"Fred\",\n"
-					+ "\"LastName\": \"Lip\",\n"
-					+ "\"ContactNumber\": \"9978654321\",\n"
-					+ "\"Email\": \"fredlip@gmail.com\",\n"
-					+ "\"Allergy\": \"Cashew\",\n"
-					+ "\"FoodCategory\": \"Vegan\",\n"
-					+ "\"DateOfBirth\": \"1971-06-08\"\n"
-					+ "\n"
-					+ "}")
+			.formParam("patientInfo", Pojo.patientInfo)
 			.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"));
 					 
           }
@@ -69,17 +58,7 @@ public void user_tries_to_update_patient_details_for_allergy_and_phone_number() 
 			.header("Authorization", "Bearer "+UserLogin.token)
 			.header("Content-Type","multipart/form-data")
 			.pathParam("patientId",id)
-			.formParam("patientInfo", "{\n"
-					+ "\n"
-					+ "\"FirstName\": \"Nick\",\n"
-					+ "\"LastName\": \"Mary\",\n"
-					+ "\"ContactNumber\": \"9138239658\",\n"
-					+ "\"Email\": \"fredlip@gmail.com\",\n"
-					+ "\"Allergy\": \"Peanuts\",\n"
-					+ "\"FoodCategory\": \"Vegan\",\n"
-					+ "\"DateOfBirth\": \"1970-04-08\"\n"
-					+ "\n"
-					+ "}")
+			.formParam("patientInfo", Pojo.updateInfo)
 			.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"))
 			.log().all();		 
           }
