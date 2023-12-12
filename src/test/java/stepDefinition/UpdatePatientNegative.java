@@ -11,6 +11,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import pojo.Pojo;
 import resources.Utils;
 
 public class UpdatePatientNegative extends Utils{
@@ -25,17 +26,7 @@ public class UpdatePatientNegative extends Utils{
 				.header("Authorization", "Bearer "+UserLogin.token)
 				.header("Content-Type","multipart/form-data")
 				.pathParam("patientId",CreateandUpdatePatient.id)
-				.formParam("patientInfo", "{\n"
-						+ "\n"
-						+ "\"FirstName\": \"Uma\",\n"
-						+ "\"LastName\": \"Nandigam\",\n"
-						+ "\"ContactNumber\": \"9138549968\",\n"
-						+ "\"Email\": \"umanandigam@gmail.com\",\n"
-						+ "\"Allergy\": \"Peanuts\",\n"
-						+ "\"FoodCategory\": \"Vegan\",\n"
-						+ "\"DateOfBirth\": \"1971-06-08\"\n"
-						+ "\n"
-						+ "}")
+				.formParam("patientInfo", Pojo.patientInfo)
 				.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"));						 
 	          }
 	
@@ -62,17 +53,7 @@ public class UpdatePatientNegative extends Utils{
 		req1 = given().spec(requestSpec())
 				.header("Content-Type","multipart/form-data")
 				.pathParam("patientId",CreateandUpdatePatient.id)
-				.formParam("patientInfo", "{\n"
-						+ "\n"
-						+ "\"FirstName\": \"Jin\",\n"
-						+ "\"LastName\": \"Nigam\",\n"
-						+ "\"ContactNumber\": \"9138512368\",\n"
-						+ "\"Email\": \"gam@gmail.com\",\n"
-						+ "\"Allergy\": \"Peanuts\",\n"
-						+ "\"FoodCategory\": \"Vegan\",\n"
-						+ "\"DateOfBirth\": \"1989-06-08\"\n"
-						+ "\n"
-						+ "}")
+				.formParam("patientInfo", Pojo.updateInfo)
 				.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"))
 				;
 

@@ -13,6 +13,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import pojo.Pojo;
 import resources.Utils;
 import utilities.Testdata;
 
@@ -29,17 +30,7 @@ public void user_enters_patient_details() throws IOException {
 	req1=  given().spec(requestSpec())
 			.header("Authorization", "Bearer "+UserLogin.token)
 			.header("Content-Type","multipart/form-data")
-			.formParam("patientInfo", "{\n"
-					+ "\n"
-					+ "\"FirstName\": \"Fred\",\n"
-					+ "\"LastName\": \"Lip\",\n"
-					+ "\"ContactNumber\": \"9978654321\",\n"
-					+ "\"Email\": \"fredlip@gmail.com\",\n"
-					+ "\"Allergy\": \"Cashew\",\n"
-					+ "\"FoodCategory\": \"Vegan\",\n"
-					+ "\"DateOfBirth\": \"1971-06-08\"\n"
-					+ "\n"
-					+ "}")
+			.formParam("patientInfo", Pojo.patientInfo)
 			.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"));
 					 
           }
@@ -59,7 +50,7 @@ public void user_performs_post_http_requests_to_create_a_patient() throws IOExce
 @Then("User receives status code {int}")
 public void user_receives_status_code(Integer int2) {
 	
-	assertEquals(res.getStatusCode(),200);	
+	assertEquals(res.getStatusCode(),201);	
     }
 
 @Given("User tries to update patient details for allergy and phone number")
@@ -69,18 +60,8 @@ public void user_tries_to_update_patient_details_for_allergy_and_phone_number() 
 			.header("Authorization", "Bearer "+UserLogin.token)
 			.header("Content-Type","multipart/form-data")
 			.pathParam("patientId",id)
-			.formParam("patientInfo", "{\n"
-					+ "\n"
-					+ "\"FirstName\": \"Nick\",\n"
-					+ "\"LastName\": \"Mary\",\n"
-					+ "\"ContactNumber\": \"9138239658\",\n"
-					+ "\"Email\": \"fredlip@gmail.com\",\n"
-					+ "\"Allergy\": \"Peanuts\",\n"
-					+ "\"FoodCategory\": \"Vegan\",\n"
-					+ "\"DateOfBirth\": \"1970-04-08\"\n"
-					+ "\n"
-					+ "}")
-			.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"))
+			.formParam("patientInfo", Pojo.updateInfo)
+			.multiPart("file", new File("src/test/java/resources/Hypo Thyroid-Report.pdf"))
 			.log().all();		 
           }
 

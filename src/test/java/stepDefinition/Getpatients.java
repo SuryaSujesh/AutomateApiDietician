@@ -30,7 +30,6 @@ public void user_performs_get_http_requests_for_getting_patient_details() throws
 	res= req.when()
 		    .get(getValue("Patient")).then()
 		    .statusCode(200).extract().response();     
-           patid= res.jsonPath().getString("patientId");
           
           }
 
