@@ -54,8 +54,8 @@ public class UpdatePatientNegative extends Utils{
 				.header("Content-Type","multipart/form-data")
 				.pathParam("patientId",CreateandUpdatePatient.id)
 				.formParam("patientInfo", Pojo.updateInfo)
-				.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"))
-				;
+				.multiPart("file", new File("src/test/java/resources/HyperThyroid_Report_final.pdf"));
+				
 
 	}
 
