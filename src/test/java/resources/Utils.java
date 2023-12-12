@@ -24,8 +24,7 @@ public class Utils {
 	public static RequestSpecification requestSpec() throws IOException {	
 		if(req==null) 
 		{
-		PrintStream log = new PrintStream(new FileOutputStream("log.txt"));
-		
+		PrintStream log = new PrintStream(new FileOutputStream("log.txt"));	
 		req = new RequestSpecBuilder()
 				.setBaseUri(getValue("baseUrl"))
 				.addFilter(RequestLoggingFilter.logRequestTo(log))
